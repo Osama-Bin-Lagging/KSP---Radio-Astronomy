@@ -24,7 +24,7 @@ for _ in range(steps):
         samples.append(x)
 
 samples = np.array(samples)
-plt.hist(samples, bins = 100, label = 'Sampled Density', density=True)
+plt.hist(samples, bins = 20, label = 'Sampled Density', density=True)
 
 x_values = np.linspace(1, 9, 1000)
 plt.plot(x_values, p(x_values), 'r-', lw=2, label='True Density')
